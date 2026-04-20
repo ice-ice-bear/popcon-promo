@@ -1,0 +1,4 @@
+# Standard gitignore for static sites
+.DS_Store
+node_modules/
+.vercel
