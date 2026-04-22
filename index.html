@@ -40,7 +40,7 @@
   .v3 .hero .pill { padding: 8px 14px; background: var(--ink); color: var(--bg);
                     border-radius: 999px; font-weight: 700; font-size: 12px; letter-spacing: 0.08em;
                     text-transform: uppercase; display: inline-flex; align-items: center; gap: 8px;
-                    font-family: var(--font-display); }
+                    font-family: var(--font-display); white-space: nowrap; flex-shrink: 0; }
   .v3 .hero .pill::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #5fe3c4;
                             box-shadow: 0 0 6px #5fe3c4; }
 
@@ -274,7 +274,8 @@
   /* Small phones */
   @media (max-width: 400px) {
     .v3 .hero h1 { font-size: 44px; }
-    .v3 .hero .nav { margin-bottom: 32px; }
+    .v3 .hero .nav { margin-bottom: 32px; gap: 12px; }
+    .v3 .hero .pill { padding: 6px 10px; font-size: 10px; letter-spacing: 0.06em; gap: 6px; }
     .v3 .hero-art { width: 220px; height: 220px; max-width: 220px; }
     .v3 .sec h2 { font-size: 26px; }
     .v3 .steps { grid-template-columns: 1fr; }
