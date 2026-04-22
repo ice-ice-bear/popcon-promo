@@ -71,8 +71,9 @@
   .v3 .btn.ghost:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
 
   /* Hero art: panda on a disc, with floating stickers */
-  .v3 .hero-art { position: relative; aspect-ratio: 1/1; }
-  .v3 .hero-art .disc { position: absolute; inset: 10%; background: white; border: 3px solid var(--ink);
+  .v3 .hero-art { position: relative; aspect-ratio: 1/1; width: 100%; max-width: 460px;
+                  justify-self: end; }
+  .v3 .hero-art .disc { position: absolute; inset: 6%; background: white; border: 3px solid var(--ink);
                         border-radius: 50%; box-shadow: 8px 8px 0 var(--ink); overflow: hidden; }
   .v3 .hero-art .disc::before { content: ""; position: absolute; inset: -20%;
                                  background: repeating-conic-gradient(from 0deg, transparent 0 10deg, rgba(124,58,237,0.08) 10deg 20deg); }
@@ -82,10 +83,10 @@
                            border-radius: 12px; padding: 8px 14px; font-weight: 400; font-size: 14px;
                            box-shadow: 3px 3px 0 var(--ink); font-family: var(--font-accent);
                            letter-spacing: 0.01em; }
-  .v3 .hero-art .st1 { top: 5%; left: -4%; transform: rotate(-8deg); background: var(--mint); }
-  .v3 .hero-art .st2 { top: 14%; right: -8%; transform: rotate(6deg); background: var(--pink); color: white; }
-  .v3 .hero-art .st3 { bottom: 10%; left: -6%; transform: rotate(4deg); background: var(--violet); color: white; }
-  .v3 .hero-art .st4 { bottom: 2%; right: -2%; transform: rotate(-5deg); background: white; }
+  .v3 .hero-art .st1 { top: 2%;  left: 2%;   transform: rotate(-8deg); background: var(--mint); }
+  .v3 .hero-art .st2 { top: 10%; right: 0%;  transform: rotate(6deg);  background: var(--pink); color: white; }
+  .v3 .hero-art .st3 { bottom: 14%; left: 2%; transform: rotate(4deg); background: var(--violet); color: white; }
+  .v3 .hero-art .st4 { bottom: 4%;  right: 4%; transform: rotate(-5deg); background: white; }
 
   /* MARQUEE strip */
   .v3 .marq { background: var(--ink); color: var(--bg); padding: 18px 0; overflow: hidden;
@@ -253,7 +254,7 @@
     .v3 .hero .ctas { flex-direction: column; align-items: stretch; width: 100%; }
     .v3 .hero .ctas .btn { justify-content: center; width: 100%; }
     .v3 .hero-art { width: 260px; height: 260px; max-width: 260px; margin: 8px auto 0;
-                    aspect-ratio: auto; }
+                    margin-left: auto; margin-right: auto; aspect-ratio: auto; }
     .v3 .hero-art .sticker { font-size: 12px; padding: 6px 10px; box-shadow: 2px 2px 0 var(--ink); }
     .v3 .sec { padding: 48px 20px; }
     .v3 .sec h2 { font-size: 30px; }
