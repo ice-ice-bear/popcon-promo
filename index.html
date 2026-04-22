@@ -216,6 +216,25 @@
   .v3 .cc h5 { margin: 0 0 6px; font-size: 17px; font-weight: 400; font-family: var(--font-accent); }
   .v3 .cc p { margin: 0; color: var(--ink-soft); font-size: 13.5px; }
 
+  /* Bottom CTA */
+  .v3 .cta-strip { padding: 80px 56px; background: var(--violet); color: white;
+                   border-bottom: 3px solid var(--ink); position: relative; overflow: hidden;
+                   text-align: center; }
+  .v3 .cta-strip::before { content: ""; position: absolute; inset: 0;
+                           background: repeating-linear-gradient(45deg, transparent 0 20px, rgba(255,255,255,0.04) 20px 22px); }
+  .v3 .cta-strip h2 { position: relative; font-family: var(--font-display); font-size: 56px;
+                      line-height: 1; letter-spacing: -0.03em; margin: 0 0 14px; }
+  .v3 .cta-strip h2 .hl { display: inline-block; background: var(--bg); color: var(--ink);
+                          padding: 2px 16px; border-radius: 12px; transform: rotate(-2deg);
+                          box-shadow: 5px 5px 0 var(--ink); }
+  .v3 .cta-strip p { position: relative; font-family: var(--font-accent); font-size: 18px;
+                     margin: 0 auto 32px; max-width: 480px; line-height: 1.55; opacity: 0.95; }
+  .v3 .cta-strip .btn { position: relative; font-size: 17px; padding: 18px 34px; }
+  .v3 .cta-strip .btn.primary { background: var(--ink); color: white; box-shadow: 5px 5px 0 var(--bg); border-color: var(--ink); }
+  .v3 .cta-strip .btn.primary:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--bg); }
+  .v3 .cta-strip .note { position: relative; margin-top: 20px; font-size: 13px; opacity: 0.85;
+                         font-family: var(--font-accent); letter-spacing: 0.01em; }
+
   .v3 footer { padding: 32px 56px; background: var(--ink); color: var(--bg);
                display: flex; justify-content: space-between; align-items: center;
                font-size: 13px; font-weight: 600; }
@@ -240,6 +259,9 @@
     .v3 .callout { grid-template-columns: 1fr; }
     .v3 .sample .row { flex-wrap: wrap; gap: 12px; justify-content: center; }
     .v3 .sample img { width: 120px; }
+    .v3 .cta-strip { padding: 56px 20px; }
+    .v3 .cta-strip h2 { font-size: 36px; }
+    .v3 .cta-strip p { font-size: 16px; }
     .v3 footer { padding: 24px 20px; flex-direction: column; gap: 10px; text-align: center; }
   }
 </style>
@@ -451,6 +473,14 @@
           <h5>카카오 오픈톡방</h5>
           <p>개설 준비 중. 더 편리한 소통 채널은 추후 안내드립니다.</p></div>
       </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="cta-strip">
+      <h2>Ready to <span class="hl">Pop?</span></h2>
+      <p>캐릭터 한 장으로 LINE 이모티콘 세트를 만들어보세요. 베타는 비공개로 운영되고, 초대는 순차적으로 보내드려요.</p>
+      <a class="btn primary" href="https://docs.google.com/forms/d/e/1FAIpQLSdRZwJzRjboY-r7ZnqNrhMilpZU0fT5A7dNpGdDKjj9qPDGCw/viewform" target="_blank" rel="noopener">베타 신청하러 가기 →</a>
+      <div class="note">약 5분 소요 · 이메일로 초대 링크 발송</div>
     </section>
 
     <footer>
